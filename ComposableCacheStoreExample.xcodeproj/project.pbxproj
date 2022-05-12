@@ -15,6 +15,7 @@
 		F8582A10282C885B0069E04E /* CacheStore in Frameworks */ = {isa = PBXBuildFile; productRef = F8582A0F282C885B0069E04E /* CacheStore */; };
 		F8582A13282C8C1E0069E04E /* CounterExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8582A12282C8C1E0069E04E /* CounterExperiment.swift */; };
 		F8582A15282C8FC30069E04E /* SharedStateExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8582A14282C8FC30069E04E /* SharedStateExperiment.swift */; };
+		F8582A19282DD0990069E04E /* Experiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8582A18282DD0990069E04E /* Experiment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		F85829F5282C882D0069E04E /* ComposableCacheStoreExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableCacheStoreExampleTests.swift; sourceTree = "<group>"; };
 		F8582A12282C8C1E0069E04E /* CounterExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterExperiment.swift; sourceTree = "<group>"; };
 		F8582A14282C8FC30069E04E /* SharedStateExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStateExperiment.swift; sourceTree = "<group>"; };
+		F8582A18282DD0990069E04E /* Experiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experiment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,6 @@
 			children = (
 				F8582A11282C8C0E0069E04E /* Experiments */,
 				F85829E4282C882A0069E04E /* ComposableCacheStoreExampleApp.swift */,
-				F85829E6282C882A0069E04E /* ExperimentList.swift */,
 				F85829E8282C882C0069E04E /* Assets.xcassets */,
 				F85829EA282C882C0069E04E /* Preview Content */,
 			);
@@ -107,6 +108,8 @@
 		F8582A11282C8C0E0069E04E /* Experiments */ = {
 			isa = PBXGroup;
 			children = (
+				F8582A18282DD0990069E04E /* Experiment.swift */,
+				F85829E6282C882A0069E04E /* ExperimentList.swift */,
 				F8582A16282CB53F0069E04E /* Counter */,
 				F8582A17282CB5450069E04E /* SharedState */,
 			);
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8582A19282DD0990069E04E /* Experiment.swift in Sources */,
 				F85829E7282C882A0069E04E /* ExperimentList.swift in Sources */,
 				F8582A13282C8C1E0069E04E /* CounterExperiment.swift in Sources */,
 				F85829E5282C882A0069E04E /* ComposableCacheStoreExampleApp.swift in Sources */,
