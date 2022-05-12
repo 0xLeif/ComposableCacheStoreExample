@@ -41,15 +41,7 @@ struct SharedStateExperimentScreen: View {
     enum CacheKey: CaseIterable {
         case count // Int
         case color // ColorType
-        case contentArray // [Color]
-        
-        var initialCacheValue: Any {
-            switch self {
-            case .count: return 0
-            case .color: return ColorType.red
-            case .contentArray: return []
-            }
-        }
+        case contentArray // [ColorType]
     }
     
     @ObservedObject var store: CacheStore<CacheKey> = CacheStore(
@@ -178,7 +170,7 @@ struct SharedStateListView: View {
     typealias ColorType = SharedStateExperiment.ColorType
     
     enum CacheKey {
-        case contentArray
+        case contentArray // [ColorType]
     }
     
     @ObservedObject var store: CacheStore<CacheKey>

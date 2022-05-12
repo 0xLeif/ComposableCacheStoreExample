@@ -107,10 +107,26 @@
 		F8582A11282C8C0E0069E04E /* Experiments */ = {
 			isa = PBXGroup;
 			children = (
-				F8582A12282C8C1E0069E04E /* CounterExperiment.swift */,
-				F8582A14282C8FC30069E04E /* SharedStateExperiment.swift */,
+				F8582A16282CB53F0069E04E /* Counter */,
+				F8582A17282CB5450069E04E /* SharedState */,
 			);
 			path = Experiments;
+			sourceTree = "<group>";
+		};
+		F8582A16282CB53F0069E04E /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				F8582A12282C8C1E0069E04E /* CounterExperiment.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		F8582A17282CB5450069E04E /* SharedState */ = {
+			isa = PBXGroup;
+			children = (
+				F8582A14282C8FC30069E04E /* SharedStateExperiment.swift */,
+			);
+			path = SharedState;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
