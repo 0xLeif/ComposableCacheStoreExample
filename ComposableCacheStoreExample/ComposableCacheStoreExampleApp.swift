@@ -11,7 +11,11 @@ import SwiftUI
 struct ComposableCacheStoreExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ExperimentList(
+                    experiments: ExperimentIdentifier.allCases.map(\.experiment)
+                )
+            }
         }
     }
 }
