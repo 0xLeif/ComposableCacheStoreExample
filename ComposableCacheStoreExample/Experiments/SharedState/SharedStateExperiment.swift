@@ -9,6 +9,8 @@ import c
 import CacheStore
 import SwiftUI
 
+// MARK: - Experiment
+
 struct SharedStateExperiment: Experiment {
     enum ColorType: CaseIterable {
         case red
@@ -34,6 +36,8 @@ struct SharedStateExperiment: Experiment {
         AnyView(SharedStateExperimentScreen())
     }
 }
+
+// MARK: - Screen
 
 struct SharedStateExperimentScreen: View {
     typealias ColorType = SharedStateExperiment.ColorType
@@ -116,6 +120,18 @@ struct SharedStateExperimentScreen: View {
     }
 }
 
+// MARK: - Screen Preview
+
+struct SharedStateExperimentPreviews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            SharedStateExperiment().screen
+        }
+    }
+}
+
+// MARK: - Edit View
+
 struct SharedStateEditView: View {
     typealias ColorType = SharedStateExperiment.ColorType
     
@@ -146,6 +162,7 @@ struct SharedStateEditView: View {
                     )
                 )
             )
+        
             
             Picker(
                 selection: store.binding(.color, as: ColorType.self),
@@ -166,6 +183,8 @@ struct SharedStateEditView: View {
     }
 }
 
+// MARK: - List View
+
 struct SharedStateListView: View {
     typealias ColorType = SharedStateExperiment.ColorType
     
@@ -182,14 +201,6 @@ struct SharedStateListView: View {
     var body: some View {
         List(listContent, id: \.self) { item in
             item.color
-        }
-    }
-}
-
-struct SharedStateExperimentPreviews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            SharedStateExperiment().screen
         }
     }
 }

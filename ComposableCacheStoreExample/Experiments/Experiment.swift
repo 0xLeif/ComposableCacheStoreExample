@@ -17,6 +17,8 @@ protocol Experiment {
 enum ExperimentIdentifier: String, CaseIterable {
     case counter
     case sharedState
+    case favoritePosts
+    case basicMVVM
 }
 
 extension ExperimentIdentifier {
@@ -24,6 +26,8 @@ extension ExperimentIdentifier {
         switch self {
         case .counter: return CounterExperiment()
         case .sharedState: return SharedStateExperiment()
+        case .favoritePosts: return FavoritePostsExperiment()
+        case .basicMVVM: return BasicMVVMExperiment()
         }
     }
 }

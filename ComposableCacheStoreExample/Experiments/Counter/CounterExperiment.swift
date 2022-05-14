@@ -8,6 +8,8 @@
 import CacheStore
 import SwiftUI
 
+// MARK: - Experiment
+
 struct CounterExperiment: Experiment {
     var id: String { ExperimentIdentifier.counter.rawValue }
     var title: String { "Counter" }
@@ -16,6 +18,8 @@ struct CounterExperiment: Experiment {
         AnyView(CounterExperimentScreen())
     }
 }
+
+// MARK: - Screen
 
 struct CounterExperimentScreen: View {
     enum CacheKey {
@@ -59,6 +63,8 @@ struct CounterExperimentScreen: View {
         }
     }
 }
+
+// MARK: - Screen Preview
 
 struct CounterExperimentPreviews: PreviewProvider {
     static var previews: some View {
