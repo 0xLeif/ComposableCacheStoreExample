@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F81FFF8F2830264100F16826 /* ImageGalleryExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FFF8E2830264100F16826 /* ImageGalleryExperiment.swift */; };
+		F81FFF922830306900F16826 /* SURL in Frameworks */ = {isa = PBXBuildFile; productRef = F81FFF912830306900F16826 /* SURL */; };
+		F81FFF95283031F200F16826 /* FlatMany in Frameworks */ = {isa = PBXBuildFile; productRef = F81FFF94283031F200F16826 /* FlatMany */; };
+		F81FFF9828303D6B00F16826 /* ScreenDataApp in Frameworks */ = {isa = PBXBuildFile; productRef = F81FFF9728303D6B00F16826 /* ScreenDataApp */; };
+		F81FFF9B28303D9300F16826 /* ScreenDataExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FFF9A28303D9300F16826 /* ScreenDataExperiment.swift */; };
+		F81FFF9E283075F300F16826 /* StoreDemoExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FFF9D283075F300F16826 /* StoreDemoExperiment.swift */; };
+		F81FFFA1283078A100F16826 /* SharedStoreStateExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FFFA0283078A100F16826 /* SharedStoreStateExperiment.swift */; };
 		F85829E5282C882A0069E04E /* ComposableCacheStoreExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85829E4282C882A0069E04E /* ComposableCacheStoreExampleApp.swift */; };
 		F85829E7282C882A0069E04E /* ExperimentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85829E6282C882A0069E04E /* ExperimentList.swift */; };
 		F85829E9282C882C0069E04E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85829E8282C882C0069E04E /* Assets.xcassets */; };
@@ -31,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F81FFF8E2830264100F16826 /* ImageGalleryExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryExperiment.swift; sourceTree = "<group>"; };
+		F81FFF9A28303D9300F16826 /* ScreenDataExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDataExperiment.swift; sourceTree = "<group>"; };
+		F81FFF9D283075F300F16826 /* StoreDemoExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDemoExperiment.swift; sourceTree = "<group>"; };
+		F81FFFA0283078A100F16826 /* SharedStoreStateExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStoreStateExperiment.swift; sourceTree = "<group>"; };
 		F85829E1282C882A0069E04E /* ComposableCacheStoreExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComposableCacheStoreExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85829E4282C882A0069E04E /* ComposableCacheStoreExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableCacheStoreExampleApp.swift; sourceTree = "<group>"; };
 		F85829E6282C882A0069E04E /* ExperimentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentList.swift; sourceTree = "<group>"; };
@@ -50,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81FFF9828303D6B00F16826 /* ScreenDataApp in Frameworks */,
+				F81FFF922830306900F16826 /* SURL in Frameworks */,
+				F81FFF95283031F200F16826 /* FlatMany in Frameworks */,
 				F8582A10282C885B0069E04E /* CacheStore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +78,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F81FFF8D2830263400F16826 /* ImageGallery */ = {
+			isa = PBXGroup;
+			children = (
+				F81FFF8E2830264100F16826 /* ImageGalleryExperiment.swift */,
+			);
+			path = ImageGallery;
+			sourceTree = "<group>";
+		};
+		F81FFF9928303D8900F16826 /* ScreenData */ = {
+			isa = PBXGroup;
+			children = (
+				F81FFF9A28303D9300F16826 /* ScreenDataExperiment.swift */,
+			);
+			path = ScreenData;
+			sourceTree = "<group>";
+		};
+		F81FFF9C283075EB00F16826 /* StoreDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F81FFF9D283075F300F16826 /* StoreDemoExperiment.swift */,
+			);
+			path = StoreDemo;
+			sourceTree = "<group>";
+		};
+		F81FFF9F2830789200F16826 /* SharedStoreState */ = {
+			isa = PBXGroup;
+			children = (
+				F81FFFA0283078A100F16826 /* SharedStoreStateExperiment.swift */,
+			);
+			path = SharedStoreState;
+			sourceTree = "<group>";
+		};
 		F85829D8282C882A0069E04E = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +160,10 @@
 			children = (
 				F8582A18282DD0990069E04E /* Experiment.swift */,
 				F85829E6282C882A0069E04E /* ExperimentList.swift */,
+				F81FFF9F2830789200F16826 /* SharedStoreState */,
+				F81FFF9C283075EB00F16826 /* StoreDemo */,
+				F81FFF9928303D8900F16826 /* ScreenData */,
+				F81FFF8D2830263400F16826 /* ImageGallery */,
 				F8FD8382282DE1CC00B8E9B8 /* BasicMVVM */,
 				F8582A16282CB53F0069E04E /* Counter */,
 				F8582A17282CB5450069E04E /* SharedState */,
@@ -172,6 +222,9 @@
 			name = ComposableCacheStoreExample;
 			packageProductDependencies = (
 				F8582A0F282C885B0069E04E /* CacheStore */,
+				F81FFF912830306900F16826 /* SURL */,
+				F81FFF94283031F200F16826 /* FlatMany */,
+				F81FFF9728303D6B00F16826 /* ScreenDataApp */,
 			);
 			productName = ComposableCacheStoreExample;
 			productReference = F85829E1282C882A0069E04E /* ComposableCacheStoreExample.app */;
@@ -225,6 +278,9 @@
 			mainGroup = F85829D8282C882A0069E04E;
 			packageReferences = (
 				F8582A0E282C885B0069E04E /* XCRemoteSwiftPackageReference "CacheStore" */,
+				F81FFF902830306900F16826 /* XCRemoteSwiftPackageReference "SURL" */,
+				F81FFF93283031F200F16826 /* XCRemoteSwiftPackageReference "FlatMany" */,
+				F81FFF9628303D6B00F16826 /* XCRemoteSwiftPackageReference "ScreenDataApp-ios" */,
 			);
 			productRefGroup = F85829E2282C882A0069E04E /* Products */;
 			projectDirPath = "";
@@ -261,11 +317,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8582A19282DD0990069E04E /* Experiment.swift in Sources */,
+				F81FFF9E283075F300F16826 /* StoreDemoExperiment.swift in Sources */,
 				F85829E7282C882A0069E04E /* ExperimentList.swift in Sources */,
+				F81FFF9B28303D9300F16826 /* ScreenDataExperiment.swift in Sources */,
 				F8582A13282C8C1E0069E04E /* CounterExperiment.swift in Sources */,
+				F81FFF8F2830264100F16826 /* ImageGalleryExperiment.swift in Sources */,
 				F85829E5282C882A0069E04E /* ComposableCacheStoreExampleApp.swift in Sources */,
 				F8FD8384282DE1E300B8E9B8 /* BasicMVVMExperiment.swift in Sources */,
 				F8FD8381282DD76800B8E9B8 /* FavoritePostsExperiment.swift in Sources */,
+				F81FFFA1283078A100F16826 /* SharedStoreStateExperiment.swift in Sources */,
 				F8582A15282C8FC30069E04E /* SharedStateExperiment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,17 +590,56 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F81FFF902830306900F16826 /* XCRemoteSwiftPackageReference "SURL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLet/SURL";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+		F81FFF93283031F200F16826 /* XCRemoteSwiftPackageReference "FlatMany" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/FlatMany";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		F81FFF9628303D6B00F16826 /* XCRemoteSwiftPackageReference "ScreenDataApp-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ServerDriven/ScreenDataApp-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 		F8582A0E282C885B0069E04E /* XCRemoteSwiftPackageReference "CacheStore" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/0xOpenBytes/CacheStore";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.2.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F81FFF912830306900F16826 /* SURL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F81FFF902830306900F16826 /* XCRemoteSwiftPackageReference "SURL" */;
+			productName = SURL;
+		};
+		F81FFF94283031F200F16826 /* FlatMany */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F81FFF93283031F200F16826 /* XCRemoteSwiftPackageReference "FlatMany" */;
+			productName = FlatMany;
+		};
+		F81FFF9728303D6B00F16826 /* ScreenDataApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F81FFF9628303D6B00F16826 /* XCRemoteSwiftPackageReference "ScreenDataApp-ios" */;
+			productName = ScreenDataApp;
+		};
 		F8582A0F282C885B0069E04E /* CacheStore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F8582A0E282C885B0069E04E /* XCRemoteSwiftPackageReference "CacheStore" */;

@@ -19,6 +19,10 @@ enum ExperimentIdentifier: String, CaseIterable {
     case sharedState
     case favoritePosts
     case basicMVVM
+    case imageGallery
+    case screenData
+    case storeDemo
+    case sharedStoreState
 }
 
 extension ExperimentIdentifier {
@@ -28,6 +32,10 @@ extension ExperimentIdentifier {
         case .sharedState: return SharedStateExperiment()
         case .favoritePosts: return FavoritePostsExperiment()
         case .basicMVVM: return BasicMVVMExperiment()
+        case .imageGallery: return ImageGalleryExperiment()
+        case .screenData: return ScreenDataExperiment()
+        case .storeDemo: return StoreDemoExperiment()
+        case .sharedStoreState: return SharedStoreStateExperiment()
         }
     }
 }
